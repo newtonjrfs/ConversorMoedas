@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context="com.newton.conversormoedas.MainActivity">
+
+    <TextView
+        android:id="@+id/textTextoPedir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBotao"
+        android:padding="10dp"
+        android:text="Digite o valor em reais :"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/campoValorReais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/campoValorDolar"
+        android:layout_alignStart="@+id/campoValorDolar"
+        android:layout_below="@+id/textTextoPedir"
+        android:background="@color/colorFundoDois"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textValorDolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoValorReais"
+        android:layout_marginTop="33dp"
+        android:background="@color/colorBotao"
+        android:padding="10dp"
+        android:text="Valor em Dolar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/campoValorDolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/campoValorEuro"
+        android:layout_alignStart="@+id/campoValorEuro"
+        android:layout_below="@+id/textValorDolar"
+        android:background="@color/colorFundoDois"
+        android:inputType="none"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/campoTextoEuro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoValorDolar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@color/colorBotao"
+        android:padding="10dp"
+        android:text="Valor em Euro"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/campoValorEuro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoTextoEuro"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorFundoDois"
+        android:inputType="none"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoValorEuro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorBotao"
+        android:text="calcular"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/campoInformacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorFundoDois"
+        android:padding="10dp"
+        android:text="@string/informacao"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

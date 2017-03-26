@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Conversor de Moedas</string>
+    <string name="valor_vazio">O valor não pode ser vazio!</string>
+    <string name="informacao">Utilizado o valor de R$3,10 Reais para cada 1 dolar e R$3,35 Reais para cada 1 Euro</string>
+</resources>
